@@ -1,0 +1,6 @@
+__project__ = 'ebssnapshot'
+__version__ = '1.4.1'
+__author__ = 'Dexter Plameras'
+__email__ = 'dplameras@splunk.com'
+__description__ = 'AWS EBS snapshots/backup tool'
+__url__ = 'https://github.com/SplunkCloud/ebssnapshot'

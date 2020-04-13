@@ -1,0 +1,22 @@
+{{
+    "family": "{name}",
+    "containerDefinitions": [
+        {{
+            "name": "{name}",
+            "environment": [
+                {{"AWS_REGION": "{AWS_DEFAULT_REGION}"}},
+                {{"SPLUNK_HOST": "{SPLUNK_HOST}"}},
+                {{"SPLUNK_PORT": "{SPLUNK_PORT}"}},
+                {{"SPLUNK_PORT": "{SPLUNK_TOKEN}"}},
+                {{"SPLUNK_INDEX": "{SPLUNK_INDEX}"}}
+            ],
+            "image": "{AWS_ACCOUNT_NUMBER}.dkr.ecr.{AWS_DEFAULT_REGION}.amazonaws.com/sre{snapshot}/{name}",
+            "cpu": 4,
+            "memory": 500,
+            "entryPoint": [
+                "/entrypoint_{name}.sh"
+            ],
+            "essential": true
+        }}
+    ]
+}}

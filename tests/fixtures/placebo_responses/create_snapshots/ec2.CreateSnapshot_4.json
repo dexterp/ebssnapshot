@@ -1,0 +1,84 @@
+{
+    "status_code": 200, 
+    "data": {
+        "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "24d7db1b-5858-4d6b-b1ab-ea095ae6a514", 
+            "HTTPHeaders": {
+                "date": "Wed, 26 Sep 2018 04:09:48 GMT", 
+                "content-length": "1975", 
+                "content-type": "text/xml;charset=UTF-8", 
+                "server": "AmazonEC2"
+            }
+        }, 
+        "Tags": [
+            {
+                "Value": "501", 
+                "Key": "backup-euid"
+            }, 
+            {
+                "Value": "/dev/xvdf", 
+                "Key": "device_name"
+            }, 
+            {
+                "Value": "false", 
+                "Key": "backup-delete-protection"
+            }, 
+            {
+                "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                "Key": "backup-host"
+            }, 
+            {
+                "Value": "501", 
+                "Key": "backup-uid"
+            }, 
+            {
+                "Value": "1sot.infrarepo-east.splunkcloud.com", 
+                "Key": "fqdn"
+            }, 
+            {
+                "Value": "StackMakr infrarepo-east Build_dev-saturn9109", 
+                "Key": "job_id"
+            }, 
+            {
+                "Value": "infrarepo-east", 
+                "Key": "stack_id"
+            }, 
+            {
+                "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Key": "backup-desc"
+            }, 
+            {
+                "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                "Key": "backup-uuid"
+            }, 
+            {
+                "Value": "dplameras", 
+                "Key": "backup-user"
+            }, 
+            {
+                "Value": "1.4.0", 
+                "Key": "backup-version"
+            }
+        ], 
+        "Encrypted": false, 
+        "VolumeId": "vol-6c1ec429", 
+        "State": "pending", 
+        "VolumeSize": 1000, 
+        "StartTime": {
+            "hour": 4, 
+            "__class__": "datetime", 
+            "month": 9, 
+            "second": 48, 
+            "microsecond": 0, 
+            "year": 2018, 
+            "day": 26, 
+            "minute": 9
+        }, 
+        "Progress": "", 
+        "OwnerId": "930458123955", 
+        "SnapshotId": "snap-0247991bc916ad341"
+    }
+}

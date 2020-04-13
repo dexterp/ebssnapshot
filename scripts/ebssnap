@@ -1,0 +1,83 @@
+#!/usr/bin/env python
+"""
+Usage:
+    ebssnap create [--readtimeout RTOUT] [--log LEVEL] [--log_file FILE] [--region AWS_REGION] [--workers WORKERS] [--filter FILTER] [--role_arn ROLE] [--record DIRECTORY]
+    ebssnap expire [--readtimeout RTOUT] [--log LEVEL] [--log_file FILE] [--region AWS_REGION] [--workers WORKERS] [--inlife DAYS] [--role_arn ROLE] [--record DIRECTORY]
+    ebssnap create [--readtimeout RTOUT] [--log LEVEL] [--log_file FILE] [--region AWS_REGION] [--workers WORKERS] [--filter FILTER] [--role_arn ROLE]
+    ebssnap expire [--readtimeout RTOUT] [--log LEVEL] [--log_file FILE] [--region AWS_REGION] [--workers WORKERS] [--inlife DAYS] [--role_arn ROLE]
+
+Options:
+    -h --help                           display help
+    --version                           show version
+    --inlife DAYS                       Number of days relative to current day where snapshots are considered in life and should NOT be expired [default: -7]
+    -r AWS_REGION --region=AWS_REGION   AWS Region. Will default to environment variable AWS_DEFAULT_REGION or the AWS configuration file
+    -f FILTER --filter=FILTER           JSON string for filtering volumes
+    --readtimeout=RTOUT                 Read timeout in seconds [default: 3600]
+    --role_arn=ROLE                     The ARN of the IAM role to Assume. If not specified then will default to using the AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY environment variables directly
+    --workers=WORKERS                   Number of process/workers [default: 4]
+    --log=(INFO|WARN|ERROR)             Log level. [default: WARN]
+    --log_file=FILE                     Log to a file. [default: none]
+    --record=DIRECTORY                  Record session to directory using placebo. This is useful for unit testing and debugging.
+
+"""
+import ebssnapshot
+import json
+import logging.config
+import multiprocessing_logging
+import os
+
+from docopt import docopt
+from ebssnapshot import metadata
+
+if __name__ == '__main__':
+    opts = docopt(__doc__, version=metadata.__version__)
+
+    filters = None
+    if opts['--filter']:
+        filters = json.loads(opts['--filter'])
+
+    #
+    # Logging
+    #
+    levels = {
+        'INFO': logging.INFO,
+        'WARN': logging.WARN,
+        'ERROR': logging.ERROR
+    }
+    level = levels[opts['--log']]
+    basic_config = {'level': level}
+    if opts['--log_file'] != 'none':
+        log_file = 'none'
+        basic_config['filename'] = opts['--log_file']
+    basic_config['format'] = '%(asctime)s - %(name)s - %(levelname)s - pid=%(process)d %(message)s'
+    logging.basicConfig(**basic_config)
+
+    # Setup Multiprocessing logger
+    multiprocessing_logging.install_mp_handler()
+
+    #
+    # Instantiate app
+    #
+    desc = 'Created by {project}-{version} script: {script}'.format(
+        project=metadata.__project__,
+        version=metadata.__version__,
+        script=os.path.basename(__file__)
+    )
+
+    ebsbackup = ebssnapshot.EBSSnapshot(
+        desc=desc,
+        region=opts.get('--region', None),
+        role=opts.get('--role_arn', None),
+        workers=int(opts['--workers']),
+        connecttimeout=10,
+        readtimeout=int(opts['--readtimeout'])
+    )
+
+    if opts['--record']:
+        ebsbackup.record(opts['--record'])
+
+    if opts['create']:
+        ebsbackup.create_snapshot_boss(filters)
+    elif opts['expire']:
+        expire_filter = [{'Name': 'tag:backup-delete-protection', 'Values': ['false']}]
+        ebsbackup.expire_snapshot_boss(expire_filter, gt=0 - abs(int(opts['--inlife'])))

@@ -1,0 +1,68 @@
+{
+    "status_code": 200, 
+    "data": {
+        "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "ea9f44f7-c858-4198-88a9-5865e568f8f6", 
+            "HTTPHeaders": {
+                "date": "Wed, 26 Sep 2018 04:09:48 GMT", 
+                "content-length": "1509", 
+                "content-type": "text/xml;charset=UTF-8", 
+                "server": "AmazonEC2"
+            }
+        }, 
+        "Tags": [
+            {
+                "Value": "501", 
+                "Key": "backup-euid"
+            }, 
+            {
+                "Value": "false", 
+                "Key": "backup-delete-protection"
+            }, 
+            {
+                "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                "Key": "backup-host"
+            }, 
+            {
+                "Value": "501", 
+                "Key": "backup-uid"
+            }, 
+            {
+                "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Key": "backup-desc"
+            }, 
+            {
+                "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                "Key": "backup-uuid"
+            }, 
+            {
+                "Value": "dplameras", 
+                "Key": "backup-user"
+            }, 
+            {
+                "Value": "1.4.0", 
+                "Key": "backup-version"
+            }
+        ], 
+        "Encrypted": true, 
+        "VolumeId": "vol-d7b51792", 
+        "State": "pending", 
+        "VolumeSize": 512, 
+        "StartTime": {
+            "hour": 4, 
+            "__class__": "datetime", 
+            "month": 9, 
+            "second": 49, 
+            "microsecond": 0, 
+            "year": 2018, 
+            "day": 26, 
+            "minute": 9
+        }, 
+        "Progress": "", 
+        "OwnerId": "930458123955", 
+        "SnapshotId": "snap-07697652063cf1f3a"
+    }
+}

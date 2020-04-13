@@ -1,0 +1,15 @@
+boto3
+coverage
+faker
+invoke
+pip-tools
+placebo
+pytest
+pytest-cov
+pytest-html
+pytest-mock
+python-dateutil
+python-dotenv
+pyyaml
+shortuuid
+wheel

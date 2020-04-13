@@ -1,0 +1,16 @@
+{
+    "status_code": 200, 
+    "data": {
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "eddac074-a2b4-4f48-9f32-88d719f88cc4", 
+            "HTTPHeaders": {
+                "date": "Wed, 26 Sep 2018 04:18:23 GMT", 
+                "content-length": "229", 
+                "content-type": "text/xml;charset=UTF-8", 
+                "server": "AmazonEC2"
+            }
+        }
+    }
+}

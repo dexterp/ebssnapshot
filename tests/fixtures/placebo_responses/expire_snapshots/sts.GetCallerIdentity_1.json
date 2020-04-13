@@ -1,0 +1,19 @@
+{
+    "status_code": 200, 
+    "data": {
+        "Account": "930458123955", 
+        "UserId": "AROAI43GS4X5O5LJWDOUM:dplameras@splunk.com", 
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "295a3fad-c143-11e8-b75b-afe7457a5085", 
+            "HTTPHeaders": {
+                "x-amzn-requestid": "295a3fad-c143-11e8-b75b-afe7457a5085", 
+                "date": "Wed, 26 Sep 2018 04:18:02 GMT", 
+                "content-length": "472", 
+                "content-type": "text/xml"
+            }
+        }, 
+        "Arn": "arn:aws:sts::930458123955:assumed-role/splunkcloud_account_power/dplameras@splunk.com"
+    }
+}

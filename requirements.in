@@ -1,0 +1,7 @@
+backoff
+boto3==1.9.1
+docopt
+multiprocessing
+multiprocessing_logging
+placebo
+python-dateutil

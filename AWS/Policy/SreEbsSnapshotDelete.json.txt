@@ -1,0 +1,26 @@
+{{
+    "Version": "2017-11-01",
+    "Statement": [
+        {{
+            "Effect": "Allow",
+            "Action": [
+                "logs:*"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        }},
+        {{
+            "Effect": "Allow",
+            "Action": "ec2:Describe*",
+            "Resource": "*"
+        }},
+        {{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DeleteSnapshot"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }},
+    ]
+}}

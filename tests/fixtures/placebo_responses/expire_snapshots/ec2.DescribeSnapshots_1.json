@@ -1,0 +1,866 @@
+{
+    "status_code": 200, 
+    "data": {
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "c086bb11-3ea7-4e43-aaa4-38860489949b", 
+            "HTTPHeaders": {
+                "transfer-encoding": "chunked", 
+                "content-type": "text/xml;charset=UTF-8", 
+                "vary": "Accept-Encoding", 
+                "date": "Wed, 26 Sep 2018 04:18:19 GMT", 
+                "server": "AmazonEC2"
+            }
+        }, 
+        "Snapshots": [
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-73bf1d36", 
+                "State": "completed", 
+                "VolumeSize": 80, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 49, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0bdb89e68c7b270fb"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-b6d17af3", 
+                "State": "completed", 
+                "VolumeSize": 16, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 49, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0a48ea508c0d7127e"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-1218c257", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 48, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0ab8933e192660139"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-af8257ed", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 47, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0beaeedcfeb7581c1"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-558f7210", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 47, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-00e222199dd035ddb"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-95dda1d0", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 50, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-06b7e2068f863e786"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "stackmakr-dev", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-e7acc1a2", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 50, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-09ecc31ff8b6ebbd2"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "Stackmakr Corp Master - Jenkins", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-2278e1d9", 
+                "State": "completed", 
+                "VolumeSize": 100, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 51, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0b5e7b12a8e7b046c"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "Stackmakr Corp Master - Root", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-b8059c43", 
+                "State": "completed", 
+                "VolumeSize": 100, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 52, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-058fc4cb9b793bf00"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-b5188bf2", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 51, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-031bfbaff5e5eb74e"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "stackmakr-corp-exec21", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-ed4dc017", 
+                "State": "completed", 
+                "VolumeSize": 100, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 54, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-03521a000a5efb0a1"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "stackmakr-qa old root", 
+                        "Key": "Name"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-886917cd", 
+                "State": "completed", 
+                "VolumeSize": 8, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 50, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-04e060242026cfbb7"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "VolumeSize": 512, 
+                "Tags": [
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }
+                ], 
+                "Encrypted": true, 
+                "VolumeId": "vol-d7b51792", 
+                "State": "completed", 
+                "KmsKeyId": "arn:aws:kms:us-east-1:930458123955:key/836acab6-1f70-4be9-b646-6fef234d0ccf", 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 49, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-07697652063cf1f3a"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-2f8e296a", 
+                "State": "completed", 
+                "VolumeSize": 250, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 48, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-054a163bbe2e5e64d"
+            }, 
+            {
+                "Description": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                "Tags": [
+                    {
+                        "Value": "501", 
+                        "Key": "backup-uid"
+                    }, 
+                    {
+                        "Value": "false", 
+                        "Key": "backup-delete-protection"
+                    }, 
+                    {
+                        "Value": "fa6821fd-c141-11e8-b5e3-784f43742d86", 
+                        "Key": "backup-uuid"
+                    }, 
+                    {
+                        "Value": "/dev/xvdf", 
+                        "Key": "device_name"
+                    }, 
+                    {
+                        "Value": "StackMakr infrarepo-east Build_dev-saturn9109", 
+                        "Key": "job_id"
+                    }, 
+                    {
+                        "Value": "1sot.infrarepo-east.splunkcloud.com", 
+                        "Key": "fqdn"
+                    }, 
+                    {
+                        "Value": "Created by ebssnapshot-1.4.0 script: ebssnap", 
+                        "Key": "backup-desc"
+                    }, 
+                    {
+                        "Value": "501", 
+                        "Key": "backup-euid"
+                    }, 
+                    {
+                        "Value": "dplameras-mbp-42d86.sv.splunk.com", 
+                        "Key": "backup-host"
+                    }, 
+                    {
+                        "Value": "infrarepo-east", 
+                        "Key": "stack_id"
+                    }, 
+                    {
+                        "Value": "dplameras", 
+                        "Key": "backup-user"
+                    }, 
+                    {
+                        "Value": "1.4.0", 
+                        "Key": "backup-version"
+                    }
+                ], 
+                "Encrypted": false, 
+                "VolumeId": "vol-6c1ec429", 
+                "State": "completed", 
+                "VolumeSize": 1000, 
+                "StartTime": {
+                    "hour": 4, 
+                    "__class__": "datetime", 
+                    "month": 9, 
+                    "second": 48, 
+                    "microsecond": 0, 
+                    "year": 2018, 
+                    "day": 26, 
+                    "minute": 9
+                }, 
+                "Progress": "100%", 
+                "OwnerId": "930458123955", 
+                "SnapshotId": "snap-0247991bc916ad341"
+            }
+        ]
+    }
+}
